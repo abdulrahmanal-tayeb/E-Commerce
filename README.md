@@ -11,7 +11,7 @@ This is a ReactJS-based frontend for an e-commerce application. It prioritizes a
 **Installation:**
 
 1. Navigate to the project directory in your terminal.
-2. Run the following command:
+2. Run the following commands:
 
 ```bash
 npm install
