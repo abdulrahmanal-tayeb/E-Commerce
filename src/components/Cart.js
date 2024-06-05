@@ -99,17 +99,23 @@ export default function Cart() {
                 </div>
             </Grow>
 
+            <div className="flexed-centered mt-5" style={{overflow: "hidden"}}>
+                <Slide in={true} direction="up" timeout={500}>
+                    <p><strong>To edit quantities, tap/click on them, and click anywhere to save.</strong></p>
+                </Slide>
+            </div>
+            
             <CardsContainer>
                 {products && products.length > 0 ?
                     products.map((product, index) => (
                         <Grow in={true} timeout={500 + index * 100}>
-                                <ItemCard
-                                    item={product}
-                                    key={index}
-                                    inCart={true}
-                                    setRemoveConfirmation={setRemoveConfirmation}
-                                    onModifyComplete={handleModify}
-                                />
+                            <ItemCard
+                                item={product}
+                                key={index}
+                                inCart={true}
+                                setRemoveConfirmation={setRemoveConfirmation}
+                                onModifyComplete={handleModify}
+                            />
                         </Grow>
                     ))
                     :

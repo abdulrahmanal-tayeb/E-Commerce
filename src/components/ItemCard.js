@@ -37,9 +37,10 @@ const ItemCard = forwardRef(
                         variant="plain"
                         color="neutral"
                         size="lg"
+                        onClick={() => setIsModifying(true)}
                         sx={{ position: 'absolute', top: '0.875rem', right: '0.5rem' }}
                     >
-                        <span onClick={() => setIsModifying(true)}>{newQuantity}</span>
+                        <span>{newQuantity}</span>
                     </IconButton>}
                     {isModifying &&
                         <input placeholder="New Quantity" style={{ textAlign: "center" }} className='form-control' onChange={({ target: { value: quantity } }) => setNewQuantity(quantity)} onBlur={({ target: { value: quantity } }) => { setIsModifying(false); onModifyComplete(id, quantity) }} />
