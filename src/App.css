@@ -1,0 +1,36 @@
+* {
+  text-wrap: pretty;
+  word-break: break-all;
+}
+
+.background-cover {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(1em);
+  z-index: 9999
+}
+
+
+.message {
+  background-color: #2b5667aa;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: fit-content;
+  border-radius: 1em;
+  z-index: 999999
+}
+
+.flexed-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
+}
