@@ -15,6 +15,8 @@ This is a ReactJS-based frontend for an e-commerce application. It prioritizes a
 
 ```bash
 npm install
+
+npm start
 ```
 
 **Ready to Go!**
