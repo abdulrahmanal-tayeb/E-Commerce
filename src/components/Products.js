@@ -63,8 +63,8 @@ export default function Products() {
                     products.map((item, index) => <ItemCard key={index} item={item} />)
                     :
                     fetching ?
-                        new Array(5).fill(null).map(_ => (
-                            <Skeleton variant={"rounded"} sx={{ width: "clamp(200px, 33%, 400px)", height: 350 }} />
+                        new Array(5).fill(null).map((_, index) => (
+                            <Skeleton key={index} variant={"rounded"} sx={{ width: "clamp(200px, 33%, 400px)", height: 350 }} />
                         ))
                         :
                         <div className="flexed-centered">

@@ -129,12 +129,12 @@ const ProductAddition = () => {
                                 ))}
 
                                 <div className="form-group mb-3">
-                                    <label htmlFor="stock" className="form-label">Thumbnail</label>
-                                    <input className='form-control' type="file" accept="image/*" name="image_upload" required></input>
+                                    <label htmlFor="thumbnail" className="form-label">Thumbnail</label>
+                                    <input className='form-control' type="file" accept="image/*" name="thumbnail" required></input>
                                 </div>
                                 <div className="form-group mb-3">
-                                    <label htmlFor="stock" className="form-label">Product Images</label>
-                                    <input onChange={handleImageUpload} className='form-control' type="file" accept="image/*" name="image_upload" required multiple></input>
+                                    <label htmlFor="images" className="form-label">Product Images</label>
+                                    <input onChange={handleImageUpload} className='form-control' type="file" accept="image/*" name="images" required multiple></input>
                                 </div>
                                 <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
                                     Submit{isSubmitting && "ting..."}
