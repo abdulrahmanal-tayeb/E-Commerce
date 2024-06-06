@@ -4,23 +4,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import React, { Suspense, useContext, useEffect, useState } from "react";
-import ItemCard from './components/ItemCard';
-import CardsContainer from './components/CardsContainer';
+import React, { Suspense } from "react";
 import Products from './components/Products';
 import ItemDetail from './components/ItemDetails';
 import { ToastContainer } from 'react-toastify';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import ProductAddition from './components/ProductAddition';
-import BasicExample from './components/shared/Navbar';
+import CustomNavBar from './components/shared/Navbar';
 
 const App = () => {
 
 
     return (
         <Suspense fallback={<h1 children="Loading" />}>
-            <BasicExample/>
+            <CustomNavBar/>
             <Router>
                 <Routes>
                     <Route index element={<Products/>} />
